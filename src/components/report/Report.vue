@@ -66,7 +66,7 @@ export default {
     if (res.meta.status !== 200) {
       return this.$message.error('获取折线图数据失败')
     }
-    console.log(res)
+    // console.log(res)
     const result = _.merge(res.data, this.options)
     // 5.使用刚指定的配置项和数据显示图表
     myChart.setOption(result)

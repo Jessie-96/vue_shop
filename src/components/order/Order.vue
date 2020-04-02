@@ -135,7 +135,7 @@ export default {
       }
       this.ordersList = res.data.goods
       this.total = res.data.total
-      console.log(res)
+      // console.log(res)
     },
     handleSizeChange (newSize) {
       this.queryInfo.pagesize = newSize
@@ -161,7 +161,7 @@ export default {
       if (res.meta.status !== 200) {
         return this.$message.error('获取物流进度失败')
       }
-      console.log(res)
+      // console.log(res)
       this.progressInfo = res.data
       this.progressDialogVisible = true
     },

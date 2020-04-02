@@ -175,7 +175,7 @@ export default {
         if (res.meta.status !== 200) {
           this.$message.error('获取静态属性列表失败！')
         }
-        console.log(res)
+        // console.log(res)
         this.onlyTableData = res.data
       }
     },
